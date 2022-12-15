@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>φόρμες επικοινωνίας</title>
+  <style>
+  label,input {
+  margin:0.3em;
+  padding:0.3em;
+}
+fieldset{
+  margin-top:10px;
+  width:70%;
+  }
+legend{
+  background-color:#000;
+  color:#fff;
+}
+input[type=submit]{
+  background-color:#00bb00;
+}
+input[type=reset]{
+  background-color:pink;
+}
+  </style>
+</head>
+<body>
+  <h3>Παρακαλώ συμπληρώστε τη φόρμα</h3>
+  <form>
+    <fieldset>
+      <legend>Προσωπικά Στοιχεία</legend>
+    <label for="on">Όνοματεπώνυμο</label>
+    <input type="text" name="onoma" id="on" size="30" 
+           placeholder="Γράψε το όνομα σου" required> <br>
+    <label for="em"> eMail </label>
+    <input type="email" name="email" id="em" placeholder="Γράψε το email σου" required><br>
+    password <input type="password" name="psw"><br>
+    Ημ. Γεν. <input type="date" name="bd"><br>
+    Αποφοίτηση <input type="range" min="1990" max="2020" name="grd"> <br>
+    <label for="exp">Έτη εμπειρίας</label>
+    <input type="number" id="exp" name="exp" min=5 max=15 value=7>
+    <br>
+    </fieldset>
+    <fieldset>
+      <legend>Ενδιαφέροντα</legend>
+    Φύλο <br> 
+    Αγόρι<input type="radio" value="male" name="epilogi">
+    Κορίτσι<input type="radio" value="female" name="epilogi">
+    Άλλο<input type="radio" value="other" name="epilogi"><br>
+    <hr>
+      <label><u><strong>Hobbies</strong></u></label><br>
+    <label for="cbx1">Αθλητισμός</label><input type="checkbox" value="sports" id="cbx1">
+    <label for="cbx2">Μαγειρική</label><input type="checkbox" value="cooking" id="cbx2">
+    <label for="cbx3">Cinema</label><input type="checkbox" value="cinema" id="cbx3">
+    <br>
+	<hr>
+    <label for="cv">Ανέβασε το βιογραφικό σου</label>
+    <input type="file" id="cv" name="cv" accept=".pdf">
+    <br>
+	</fieldset>
+	 <fieldset>
+      <legend>Μια σύντομη δήλωση</legend>
+      <textarea placeholder="Γράψε Δύο λόγια, (μέχρι 500 χαρακτηρες)" cols="60" rows="10" maxlength="500"></textarea>
+    </fieldset>
+	
+    
+        <input type="Submit" value="Αποστολή">
+        <input type="reset" value="Ακύρωση">
+      </form>
+</body>
+</html>
